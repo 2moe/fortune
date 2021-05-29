@@ -1,0 +1,5 @@
+url=https://www.debian.org/doc/manuals/debian-reference/debian-reference.zh-tw.txt
+(^[0-9]+\..*\n\n^[^0-9])
+%\n\n$1
+strfile -c % debian-reference.zh-tw.txt debian-reference.zh-tw.txt.dat
+/usr/games/fortune debian-reference.zh-tw.txt
