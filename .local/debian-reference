@@ -1,0 +1,7 @@
+url=https://www.debian.org/doc/manuals/debian-reference/debian-reference.es.txt
+(^[0-9]+\..*\n\n^[^0-9])
+%\n\n$1
+
+
+strfile -c % debian-reference.es.txt debian-reference.es.txt.dat
+/usr/games/fortune debian-reference.es.txt
