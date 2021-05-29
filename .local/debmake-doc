@@ -1,0 +1,8 @@
+url=https://www.debian.org/doc/manuals/debmake-doc/debmake-doc.zh-cn.txt
+
+(^[0-9]+\..*\n\n^[^0-9])
+%\n\n$1
+
+
+strfile -c % debmake-doc.zh-cn.txt debmake-doc.zh-cn.txt.dat
+/usr/games/fortune debmake-doc.zh-cn.txt
