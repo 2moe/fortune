@@ -1,5 +1,9 @@
 url=https://www.debian.org/doc/manuals/debian-reference/debian-reference.zh-tw.txt
 (^[0-9]+\..*\n\n^[^0-9])
 %\n\n$1
+網絡 -> 網路
+軟件 -> 軟體
+服務器 -> 伺服器
+
 strfile -c % debian-reference.zh-tw.txt debian-reference.zh-tw.txt.dat
 /usr/games/fortune debian-reference.zh-tw.txt
