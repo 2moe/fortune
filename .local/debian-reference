@@ -4,6 +4,7 @@ url=https://www.debian.org/doc/manuals/debian-reference/debian-reference.zh-tw.t
 網絡 -> 網路
 軟件 -> 軟體
 服務器 -> 伺服器
+鏈接 -> 連結
 
 strfile -c % debian-reference.zh-tw.txt debian-reference.zh-tw.txt.dat
 /usr/games/fortune debian-reference.zh-tw.txt
